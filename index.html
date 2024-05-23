@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top G's Seite</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .video-background {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .video-background video {
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .discord-link, .songs-link {
+            position: absolute;
+            top: 20px;
+            color: #7289da; /* Blaue Discord-Farbe */
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .discord-link {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .songs-link {
+            left: 20px;
+        }
+
+        .songs-list {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #fff;
+        }
+
+        .songs-list a {
+            display: block;
+            margin-bottom: 10px;
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay loop muted>
+            <source src="https://www.youtube.com/watch?v=gP34SyTEX2k" type="video/mp4">
+            <!-- Hier können weitere Videoformate hinzugefügt werden -->
+        </video>
+    </div>
+    <a href="https://discord.com/" class="discord-link">Discord</a>
+    <a href="#" class="https://www.youtube.com/watch?v=gP34SyTEX2k">Songs</a>
+    <div class="songs-list">
+        <a href="#">Song 1</a>
+        <a href="#">Song 2</a>
+        <a href="#">Song 3</a>
+        <!-- Weitere Songs können hier hinzugefügt werden -->
+    </div>
+</body>
+</html>
